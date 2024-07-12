@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+
+
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+
+    background: url('background-img.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.navbar-brand img{
+    width: 200px;
+    height: auto;
+}
+
+.offcanvas-title img {
+    width: 150px;
+    height: auto;
+}
+
+
+#hero .col {
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+#hero .img-col {
+    justify-content: flex-end;
+    margin-top: 100px;
+}
+
+#hero img {
+    max-width: 130% !important;
+    width: 130%;
+}
+
+#hero .card {
+    box-shadow: 11px 7px 16px #f9f9f9;
+    border: 0;
+    text-align: center;
+}
+
+#hero .icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#projects .projects {
+    margin-bottom: 50px;
+}
+
+#contact {
+    text-align: center;
+    background-color: #02de98;
+    color: white;
+}
+#contact h1 {
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+    }
+}
