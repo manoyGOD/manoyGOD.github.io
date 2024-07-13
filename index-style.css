@@ -1,30 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 * {
-
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
-
-body{
-
-    background: url('background-img.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: multiply;
+body {
+    display: block;
+    overflow-x: hidden;
+    background:rgb(207, 207, 209) ;
 }
 
-.navbar-brand img{
-    width: 200px;
-    height: auto;
+
+nav {
+    background-color: rgb(17, 21, 28);
 }
 
-.offcanvas-title img {
-    width: 150px;
-    height: auto;
+.navbar-brand img {
+    max-height: 100px;
+
 }
 
+.navbar-brand {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: black;
+}
+
+nav ul li a {
+    color: navajowhite !important;
+    font-size: 22px;
+    margin: auto 40px;
+}
+
+nav ul li a:hover {
+    color: #eed9c4;
+}
+
+.nav-item{
+    color: white;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    font-weight: 310;
+}
 
 #hero .col {
     justify-content: center;
@@ -35,42 +71,53 @@ body{
 #hero .img-col {
     justify-content: flex-end;
     margin-top: 100px;
+    margin-bottom: 100px;
+    background:rgb(207, 207, 209) ;
 }
 
 #hero img {
     max-width: 130% !important;
-    width: 130%;
+    width: 100%;
+    height: auto;
 }
 
 #hero .card {
-    box-shadow: 11px 7px 16px #f9f9f9;
-    border: 0;
+    box-shadow: 20px 10px 20px grey;
+    border:0;
     text-align: center;
+    background: #faf8f6;
 }
 
 #hero .icon {
-    width: 50px;
-    height: 50px;
+    width: 200px;
+    height: 200px;
     margin-bottom: 20px;
 }
 
+#about-us img {
+    background: none; /* Ensure no background color */
+}
+
+#about-us {
+    background-color: rgb(207, 207, 209); /* The section background color */
+}
+
 #projects .projects {
-    margin-bottom: 50px;
+    margin-top: -60px;
+    margin-bottom: 40px;
+}
+
+.link-instagram {
+    color: navajowhite !important;
 }
 
 #contact {
     text-align: center;
-    background-color: #02de98;
-    color: white;
-}
-#contact h1 {
-    text-align: center;
-    color: white;
+    background-color:rgb(17, 21, 28);
+    color: navajowhite;
 }
 
-@media (max-width: 991px) {
-    .sidebar{
-        background-color: rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(10px);
-    }
+#contact h1 {
+    text-align: center;
+    color: navajowhite;
 }
