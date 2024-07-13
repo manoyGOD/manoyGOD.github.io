@@ -95,11 +95,11 @@ section p {
 }
 
 #about-us img {
-    background: none; /* Ensure no background color */
+    background: none; 
 }
 
 #about-us {
-    background-color: rgb(207, 207, 209); /* The section background color */
+    background-color: rgb(207, 207, 209); 
 }
 
 #projects .projects {
