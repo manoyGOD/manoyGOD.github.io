@@ -27,7 +27,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     if (username === 'admin@gmail.com' && password === 'password') {
         alert('Login successful');
-        window.location.href = 'index.html';
+        window.location.href = 'index-loginned.html';
     } else {
         alert('Invalid username or password');
     }
