@@ -22,21 +22,38 @@ iconClose.addEventListener('click', () => {
 
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    const username = document.getElementById('email').value;
+    const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    if (username === 'admin@gmail.com' && password === 'password') {
+    const storedUser = JSON.parse(localStorage.getItem(email));
+
+    if (storedUser && storedUser.password === password) {
         alert('Login successful');
         window.location.href = 'index-loginned.html';
     } else {
-        alert('Invalid username or password');
+        alert('Invalid email or password');
+    }
+});
+
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('registerEmail').value;
+    const password = document.getElementById('registerPassword').value;
+
+    if (localStorage.getItem(email)) {
+        alert('User already exists');
+    } else {
+        const user = { email, password };
+        localStorage.setItem(email, JSON.stringify(user));
+        alert('Registration successful');
+        loginLink.click();
     }
 });
 
 const logoutButton = document.querySelector('.btnLogout');
 
-logoutButton.addEventListener('click', () => {
-    window.location.href = 'login.html';
-});
-
-
+if (logoutButton) {
+    logoutButton.addEventListener('click', () => {
+        window.location.href = 'login.html';
+    });
+}

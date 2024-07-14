@@ -96,7 +96,7 @@ header {
 
 .navigation .btnLogin-popup:hover {
     background: #fff;
-    color: #412657;
+    color: #096e53;
 }
 
 .wrapper {
@@ -159,7 +159,7 @@ header {
     right: 0;
     width: 45px;
     height: 45px;
-    background: #412657;
+    background: #096e53;
     font-size: 2em;
     color: #fff;
     display: flex;
@@ -171,7 +171,7 @@ header {
 }
 .form-box h2 {
     font-size: 2em;
-    color: #412657;
+    color: #096e53;
     text-align: center;
 }
 
@@ -179,7 +179,7 @@ header {
     position: relative;
     width: 100%;
     height: 50px;
-    border-bottom: 2px solid #412657;
+    border-bottom: 2px solid #096e53;
     margin: 30px 0;
 }
 
@@ -189,7 +189,7 @@ header {
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
-    color: #412657;
+    color: #096e53;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
@@ -208,7 +208,7 @@ header {
     border: none;
     outline: none;
     font-size: 1em;
-    color: #412657;
+    color: #096e53;
     font-weight: 600;
     padding: 0 35px 0 5px;
 }
@@ -217,13 +217,13 @@ header {
     position: absolute;
     right: 8px;
     font-size: 1.2em;
-    color: #412657;
+    color: #096e53;
     line-height: 57px;
 }
 
 .remember-forgot {
     font-size: .9em;
-    color: #412657;
+    color: #096e53;
     font-weight: 500;
     margin: -15px 0 15px;
     display: flex;
@@ -231,12 +231,12 @@ header {
 }
 
 .remember-forgot label input {
-    accent-color: #412657;
+    accent-color: #096e53;
     margin-right: 3px;
 }
 
 .remember-forgot a {
-    color: #412657;
+    color: #096e53;
     text-decoration: none;
 }
 
@@ -247,7 +247,7 @@ header {
 .btn {
     width: 100%;
     height: 45px;
-    background: #412657;
+    background: #096e53;
     border: none;
     outline: none;
     border-radius: 6px;
@@ -259,14 +259,14 @@ header {
 
 .login-register {
     font-size: 1em;
-    color: #412657;
+    color: #096e53;
     font-weight: 500;
     margin: 25px 0 10px;
     text-align: center;
 }
 
 .login-register p a {
-    color: #412657;
+    color: #096e53;
     text-decoration: none;
     font-weight: 600;
 }
