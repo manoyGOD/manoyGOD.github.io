@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a8e063, #d76d77);
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    width: 320px;
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box; 
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    box-sizing: border-box; 
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 60px;
+    font-size: 1.5em;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background: #e0e0e0;
+    font-weight: bold;
+    transition: background 0.2s, transform 0.1s;
+}
+
+button:active {
+    background: #b0b0b0; /* Darker color for pressed effect */
+    transform: scale(0.95);
+}
+
+button:nth-child(4n),
+button:last-child {
+    background: #ff9500;
+    color: white;
+}
+
+button:nth-child(4n):active,
+button:last-child:active {
+    background: #cc7700; /* Darker color for pressed effect */
+}
+
+button:nth-child(4n) {
+    grid-column: span 1;
+}
+
+button.equals {
+    grid-row: span 2;
+    background: #ff9500;
+    color: white;
+    height: 130px; 
+}
+
+button.equals:active {
+    background: #cc7700; /* Darker color for pressed effect */
+}
+
+button:nth-last-child(2) {
+    grid-column: span 2;
+}
