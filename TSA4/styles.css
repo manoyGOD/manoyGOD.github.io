@@ -1,0 +1,99 @@
+body {
+    background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Food+Background'); /* Replace with actual food background */
+    background-size: cover;
+    background-position: center;
+    color: #000; /* Changed text color to black */
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+}
+
+.header h1 {
+    font-size: 3em;
+    font-family: 'Brush Script MT', cursive; /* Change to desired font */
+    margin: 0;
+}
+
+.header p {
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.flag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px; /* Adjust width as necessary */
+    height: auto;
+    background: url('https://via.placeholder.com/150/FF0000/FFFFFF?text=Flag') no-repeat; /* Replace with actual flag image */
+    background-size: contain;
+    z-index: 5;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 50px;
+    width: 100%;
+}
+
+.menu-item {
+    position: relative;
+    width: 200px;
+    margin: 0 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+.menu-description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000; /* Changed description text color to black */
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-item:hover .menu-description {
+    opacity: 1;
+}
+
+.main-menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #FFD700;
+    color: #000; /* Changed button text color to black */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.main-menu-btn:hover {
+    background-color: #FFC107;
+}
