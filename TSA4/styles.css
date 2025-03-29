@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://via.placeholder.com/1920x1080/000000/FFFFFF?text=Food+Background'); /* Replace with actual food background */
+    background-image: url('D:/Github/manoyGOD.github.io/TSA4/images/food_bg.jpg'); /* Replace with actual food background */
     background-size: cover;
     background-position: center;
     color: #000; /* Changed text color to black */
@@ -12,7 +12,7 @@ body {
 .header {
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 40px; /* Move the text further to the right */
     z-index: 10;
 }
 
@@ -20,20 +20,28 @@ body {
     font-size: 3em;
     font-family: 'Brush Script MT', cursive; /* Change to desired font */
     margin: 0;
+    color: white; /* Make "BEST of MERRIDIEN" white */
+}
+
+.header h2 {
+    font-size: 2.5em; /* Increase the size of "RESTAURANT GUIDE" */
+    margin: 0;
+    color: #ADD8E6; /* Soft light blue color for "RESTAURANT GUIDE" */
 }
 
 .header p {
     font-size: 0.8em;
     margin: 0;
+    color: white; /* Make "PRODUCED BY: LOCAL MAGAZINE" white */
 }
 
 .flag {
     position: absolute;
     top: 0;
     left: 0;
-    width: 150px; /* Adjust width as necessary */
-    height: auto;
-    background: url('https://via.placeholder.com/150/FF0000/FFFFFF?text=Flag') no-repeat; /* Replace with actual flag image */
+    width: 150px;
+    height: 150px; /* Ensure the element has a height */
+    background: url('D:/Github/manoyGOD.github.io/TSA4/images/food_bg.jpg') no-repeat;
     background-size: contain;
     z-index: 5;
 }
@@ -57,6 +65,8 @@ body {
 
 .menu-item img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
     border-radius: 10px;
     transition: transform 0.2s;
 }
