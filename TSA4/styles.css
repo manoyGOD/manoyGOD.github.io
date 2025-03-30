@@ -48,16 +48,18 @@ body {
 
 .menu-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start; /* Align items to the left */
     position: absolute;
     bottom: 50px;
     width: 100%;
+    padding-left: 700px; /* Add padding to move the containers to the right */
 }
 
 .menu-item {
     position: relative;
-    width: 200px;
-    margin: 0 10px;
+    width: 220px; /* Slightly wider */
+    height: 500px; /* A lot taller */
+    margin: 0 20px; /* Adjust spacing between containers */
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
@@ -77,18 +79,63 @@ body {
 
 .menu-description {
     position: absolute;
-    bottom: 0;
+    bottom: 30px; /* Adjusted to leave space for the "More" text */
     width: 100%;
+    height: 150px; /* Set a fixed height for the hover effect background */
     background: rgba(255, 255, 255, 0.8);
     color: #000; /* Changed description text color to black */
     padding: 10px;
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s;
+    overflow: hidden; /* Prevent text from overflowing */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+}
+
+.menu-description::before,
+.menu-description::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background: #000; /* Line color */
+    margin: 5px 0; /* Space between the lines and text */
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .menu-item:hover .menu-description {
+    opacity: 1; /* Show the description on hover */
+}
+
+.menu-item:hover .menu-description::before,
+.menu-item:hover .menu-description::after {
     opacity: 1;
+}
+
+.more {
+    position: absolute;
+    bottom: 10px; /* Position below the bottom line */
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more .arrow {
+    margin-right: 5px; /* Space between the arrow and "More" text */
+    font-size: 1.2em;
+}
+
+.menu-item:hover .more {
+    opacity: 1; /* Show the "More" text and arrow on hover */
 }
 
 .main-menu-btn {
