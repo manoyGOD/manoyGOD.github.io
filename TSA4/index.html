@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
 </head>
 <body>
-
-    <div class="flag"></div>
-
     <div class="header">
         <h1>BEST of MERRIDIEN</h1>
         <h2>RESTAURANT GUIDE</h2>
@@ -21,6 +18,7 @@
 
     <div class="menu-container">
         <div class="menu-item">
+            <div class="menu-title">Gabel Loffel</div>
             <img src="./images/mash.jpg" alt="Gabel Loffel">
             <div class="menu-description">
                 <div class="description-text">Get out your Lederhosen!</div>
@@ -30,6 +28,7 @@
             </div>
         </div>
         <div class="menu-item">
+            <div class="menu-title">Gary Gari</div>
             <img src="./images/corn_steak.jfif" alt="Gary Gari">
             <div class="menu-description">
                 <div class="description-text">The delicious headquarters for all your ginger-related needs!</div>
@@ -39,6 +38,7 @@
             </div>
         </div>
         <div class="menu-item">
+            <div class="menu-title">IL Piatto</div>
             <img src="./images/fish.png" alt="Il Piatto">
             <div class="menu-description">
                 <div class="description-text">Got wild finicky kids? Head for Il Piatto for kid-friendly Italian Fun!</div>
@@ -48,6 +48,7 @@
             </div>
         </div>
         <div class="menu-item">
+            <div class="menu-title">Pierre Platters</div>
             <img src="./images/steak_lobster.jfif" alt="Pierre Platters">
             <div class="menu-description">
                 <div class="description-text">Smart talks. Smart eats!</div>
@@ -56,6 +57,28 @@
                 <span class="arrow">➤</span> More
             </div>
         </div>
+    </div>
+
+    <div class="popup-menu" id="popup-menu">
+        <div class="popup-header">
+            <h2 class="popup-title">Title</h2>
+        </div>
+        <div class="popup-content">
+            <div class="popup-top">
+                <div class="popup-address">
+                    <strong>Address:</strong> Lorem Ipsum Street, 123
+                </div>
+                <div class="popup-category">
+                    <strong>Category:</strong> Cuisine<br>
+                    <strong>Time:</strong> 10:00 AM - 10:00 PM<br>
+                    <strong>Price:</strong> $$$
+                </div>
+            </div>
+            <div class="popup-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+        </div>
+        <button class="popup-close" id="popup-close">Close</button>
     </div>
 
     <button class="main-menu-btn">MAIN MENU</button>
