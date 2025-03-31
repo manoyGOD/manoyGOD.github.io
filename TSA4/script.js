@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
             time: '10:00 AM - 10:00 PM',
             price: '$$$',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-            image: '/TSA4/images/mash.jpg' // Corrected path
+            image: './images/mash.jpg' // Corrected path
         },
         'Gary Gari': {
             address: 'Dolor Sit Avenue, 456',
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             time: '11:00 AM - 9:00 PM',
             price: '$$',
             description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-            image: '/TSA4/images/corn_steak.jfif' // Corrected path
+            image: './images/corn_steak.jfif' // Corrected path
         },
         'IL Piatto': {
             address: 'Consectetur Road, 789',
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
             time: '12:00 PM - 11:00 PM',
             price: '$$$',
             description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
-            image: '/TSA4/images/fish.png' // Corrected path
+            image: './images/fish.png' // Corrected path
         },
         'Pierre Platters': {
             address: 'Adipiscing Blvd, 101',
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
             time: '9:00 AM - 8:00 PM',
             price: '$$$$',
             description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-            image: '/TSA4/images/steak_lobster.jfif' // Corrected path
+            image: './images/steak_lobster.jfif' // Corrected path
         }
     };
 

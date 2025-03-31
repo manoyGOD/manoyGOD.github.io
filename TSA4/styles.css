@@ -1,5 +1,5 @@
 body {
-    background-image: url('/TSA4/images/food_bg.jpg'); /* Corrected path */
+    background-image: url('./images/food_bg.jpg'); /* Corrected path */
     background-size: cover;
     background-position: center;
     color: #000; /* Changed text color to black */
