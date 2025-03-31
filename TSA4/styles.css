@@ -1,5 +1,5 @@
 body {
-    background-image: url('D:/Github/manoyGOD.github.io/TSA4/images/food_bg.jpg'); /* Replace with actual food background */
+    background-image: url('/TSA4/images/food_bg.jpg'); /* Corrected path */
     background-size: cover;
     background-position: center;
     color: #000; /* Changed text color to black */
@@ -40,8 +40,8 @@ body {
     top: 0;
     left: 0;
     width: 150px;
-    height: 150px; /* Ensure the element has a height */
-    background: url('D:/Github/manoyGOD.github.io/TSA4/images/food_bg.jpg') no-repeat;
+    height: 150px;
+    background: url('/TSA4/images/food_bg.jpg') no-repeat;
     background-size: contain;
     z-index: 5;
 }
