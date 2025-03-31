@@ -153,16 +153,17 @@ body {
 }
 
 .main-menu-btn {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 10px;
     right: 20px;
     background-color: #FFD700;
-    color: #000; /* Changed button text color to black */
+    color: black;
     border: none;
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 5px;
-    z-index: 10;
+    cursor: pointer;
+    z-index: 25;
 }
 
 .main-menu-btn:hover {
@@ -173,33 +174,63 @@ body {
 .popup-menu {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 50%; /* Covers the bottom part of the screen */
+    left: 250px; /* Start from the left edge of the first container */
+    width: calc(100% - 250px); /* Span from the first container to the right edge */
+    height: 70%; /* Covers 70% of the screen vertically */
     background-color: white;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    display: none; /* Initially hidden */
+    display: none; /* Hide the pop-up by default */
     z-index: 20;
     border-top: 2px solid #FFD700;
+    flex-direction: row; /* Use flexbox to align the title bar and content */
 }
 
 .popup-header {
     background-color: yellow;
     color: black;
     font-family: 'Times New Roman', serif;
-    font-size: 1.5em;
+    font-size: 1.2em; /* Adjust font size for better fit */
     text-align: center;
-    padding: 10px 0;
-    border-bottom: 2px solid white;
+    padding: 5px 0; /* Reduce padding to make the header thinner */
+    border-right: 2px solid white; /* Add a border to separate the title bar from the content */
     writing-mode: vertical-rl; /* Makes the text vertical */
     text-orientation: upright;
+    width: auto; /* Automatically adjust width to fit the text */
+    min-width: 50px; /* Ensure it’s not too thin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure the title bar spans the full height of the pop-up */
+    box-sizing: border-box; /* Include padding and border in the width/height calculation */
 }
 
 .popup-content {
+    display: flex;
+    width: 100%; /* Allocate the remaining space for the content */
+    height: 100%; /* Ensure it spans the full height of the pop-up */
+}
+
+.popup-left {
+    width: 50%; /* Allocate half of the pop-up for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Optional background for the image section */
+    position: relative; /* Ensure the image does not overlap the title header */
+}
+
+.popup-image {
+    width: 100%; /* Make the image fill the entire left half */
+    height: 100%; /* Make the image fill the entire left half */
+    object-fit: cover; /* Ensure the image scales proportionally without distortion */
+    border-radius: 0; /* Remove any border radius for a clean fit */
+}
+
+.popup-right {
+    width: 50%; /* Allocate half of the pop-up for the text */
     padding: 20px;
     display: flex;
     flex-direction: column;
-    height: calc(100% - 60px); /* Adjust height to fit below the header */
 }
 
 .popup-top {
